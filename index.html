@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Paper scissors - JS App</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="">
+  <header class="text-center w-100 p-3 shadow">
+    <h1>Papper scissors game</h1>
+  </header>
+  <main class="wrapper container-fluid d-flex flex-column justify-content-center">
+    <div class="select d-flex flex-column justify-content-center">
+      <div class="align-self-center mt-3 p-3">
+        <h3>Please select:</h3>
+      </div>
+      <div class=" text-center align-self-center mt-3">
+        <img data-option="papier" class="first m-3 border border-secondary rounded-circle" src="img/papier.jpg" alt=""
+          title="Papier">
+        <img data-option="kamień" class="second m-3 border border-secondary rounded-circle" src="img/kamien.jpg" alt=""
+          title="Kamień">
+        <img data-option="nożyczki" class="third m-3 border border-secondary rounded-circle" src="img/nozyczki.jpg"
+          alt="" title="nożyczki">
+      </div>
+    </div>
+    <div class="align-self-center mt-5">
+      <button class="start btn btn-danger">Let's play!</button>
+    </div>
+
+
+
+    <!-- TODO od tego miejsca  -->
+    <div>
+      <p class="text-center"> Game result</p>
+      <p class="text-center">Your choise: <span class="" data-summary="your-choice">asd</span></p>
+      <p class="text-center">Computer choise: <span class=""  data-summary="ai-choice">asd</span></p>
+      <p class="text-center">Winner: <span class="" data-summary="who-win">asd</p>
+    </div>
+    <div>
+      <p class="text-center">Ladderboard</p>
+      <p class="numbers text-center">Number of games: <span>0</span></p>
+      <p class="wins text-center">Wins: <span>0</span></p>
+      <p class="looses text-center">Looses: <span>0</span></p>
+      <p class="draws text-center">Draws: <span>0</span></p>
+    </div>
+  </main>
+  <footer>
+    <div>
+      <p class="text-center">&copy; Jakub Chmura 2019</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="js/game.js"></script>
+</body>
+
+</html>
